@@ -16,7 +16,7 @@ export class CustomValidators {
                     resolve({ 'invalidProjectName': true });
                 }
                 return null;
-            });
+            }, 2000);
         });
         return promise;
     }
